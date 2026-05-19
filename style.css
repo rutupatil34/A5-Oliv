@@ -1,0 +1,875 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 86%;
+    margin: auto;
+    font-family: serif;
+}
+#section1{
+    height: 100%;
+    width: 100%;
+}
+#section1 nav{
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-right: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.121);
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+nav .logo img{
+    width: 115px;
+}
+nav .logo p{
+    font-size: 18px;
+    background-color: #EDDED5; 
+    padding: 7px;  
+    border-radius: 40px;
+}
+nav .about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+}
+nav .about a{
+    text-decoration: none;
+    color: black;
+}
+.about a{
+    width: fit-content;
+    background-image: linear-gradient(black, black);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 2px;
+    transition: background-size 0.4s ease;
+    cursor: pointer;
+}
+.about a:hover{
+    background-size: 100% 2px;
+}
+nav .about span{
+    background-color: #EDDED5;
+    border-radius: 40px;
+    padding: 1px 5px;
+}
+nav .about button{
+    font-size: 20px;
+    background-color: white; 
+    padding: 15px 20px;  
+    border-radius: 40px;
+    border: 1px solid black;
+    font-family: serif;
+    cursor: pointer;
+}
+.about button:hover{
+    background-color: black;
+    color: white;
+}
+#section1 .mianpage{
+    height: 87%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 215px;
+    padding-bottom: 70px;
+}
+.mianpage h1{
+    font-family: sans-serif;
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 120px;
+}
+.mianpage p{
+    font-size: 30px;
+    line-height: 43px;
+}
+.mianpage button{
+    font-size: 20px;
+    background-color: black; 
+    padding: 25px 35px;  
+    border-radius: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.mianpage button:hover{
+    font-weight: 600;
+}
+#section2{
+    width: 100%;
+    height: 80%;
+    padding: 40px 0px;
+}
+#section2 .slider{
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 60px;
+}
+#section2 .animate img{
+    height: 50px;
+    padding: 0px 65px;
+}
+#section2 .animate{
+    display: flex;
+    align-items: center;
+    animation-name: logos;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes logos {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#section2 .aboutcards{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutcards .box1{
+    background-color: #F4F4F5;
+    padding: 50px;
+    height: 420px;
+    width: 370px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
+}
+.aboutcards .box1 h1{
+    font-size: 36px;
+    font-weight: 400
+}
+.aboutcards .box1 p{
+    font-size: 22px;
+    color: gray;
+    line-height: 32px
+}
+.aboutcards .box1 a{
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+}
+#section3{
+    width: 100%;
+    min-height: 100%;
+    padding-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.121);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.121);
+}
+#section3 .toplable{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.toplable h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.toplable button{
+    font-size: 20px; 
+    padding: 17px 25px;  
+    border-radius: 40px;
+    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.toplable button:hover{
+    background-color: black;
+    color: white;
+}
+#section3 .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#section3 .card1{
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.cardimg{
+    height: 540px;
+    overflow: hidden;
+}
+.cardimg img{
+    height: 540px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.card1 img:hover{
+    transform: scale(1.08);
+}
+.card1 .cardsname{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.cardsname h1{
+    font-size: 28px;
+    font-weight: 500;
+}
+.cardsname button{
+    padding: 12px 20px;
+    border-radius: 40px;
+    border: 1px solid black;
+    font-size: 17px;
+    cursor: pointer;
+}
+.cardsname button:hover{
+    background-color: black;
+    color: white;
+}
+.onew{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+#section4{
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+}
+#section4 .tcards{
+    height: 49%;
+    display: flex;
+    gap: 40px;
+}
+.tcards:nth-child(2){
+    background-color: #F1F6F5;
+}
+.tcards:nth-child(3){
+    background-color: #F8F8F8;
+}
+#section4 .tcards1{
+    width: 320px;
+    height: 100%;
+    background-color: #F1F5F9;
+    padding: 50px;
+}
+
+.tcards1 p{
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.tcards1 h2{
+    font-size: 30px;
+    margin-bottom: 130px;
+    font-weight: 500;
+}
+.tcards1 button{
+    padding: 16px 23px;
+    border-radius: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.tcards1 button i{
+    font-size: 18px;
+}
+#section4 .bcards{
+    margin-top: 40px;
+    height: 49%;
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+}
+#section4 .bcards1{
+    height: 100%;
+    width: 320px;
+    background-color: #F8EDE3;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+.bcards1 p{
+    font-size: 21px;
+    text-transform: uppercase;
+}
+.bcards1 h2{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#section5{
+    height: 90%;
+    width: 100%;
+    
+}
+#section5 .text-section{
+    margin-top: 140px;
+    width: 100%;
+    padding: 0px 410px; 
+    font-family: serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section h1{
+    width: 100%;
+    font-size: 62px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 60px;
+}
+
+.text-bottom{
+    display: flex;
+    gap: 80px;
+}
+
+.text-bottom p{
+    width: 50%;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #444;
+}
+.tnew{
+    font-size: 20px;
+    margin-top: 100px;
+}
+#section6{
+    height: 92%;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.121);
+}
+#section6 .sec6head{
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec6head h1{
+    font-size: 55px;
+    font-weight: 500;
+}
+.sec6head button{
+    padding: 17px 25px;
+    border-radius: 40px;
+    font-size: 19px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-family: serif;
+    cursor: pointer;
+}
+.sec6head button:hover{
+    background-color: white;
+    color: black;
+}
+.teamcard{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.teamcard1{
+    height: 100%;
+    background-color: #ebf1f0;
+    width: 375px;
+    padding: 70px;
+}
+.teamcard1 h3{
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.teamcard1 h1{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.teamcard1 p{
+    color: gray;
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 98px;
+}
+.teamcard1 button{
+    padding: 20px 30px;
+    border-radius: 40px;
+    font-size: 19px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: serif;
+    cursor: pointer;
+}
+.teamcard2{
+    height: 100%;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+.teamcard2 .teamimg{
+    background-image: url('https://assets-global.website-files.com/63c3f1995d4c3581bbc944b5/63c68f2ecddac415070de2e8_team-01-p-500.webp');
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.timg1,
+.timg2,
+.timg3{
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.teamimg:hover .timg1,
+.teamimg:hover .timg2,
+.teamimg:hover .timg3{
+    transform: translateY(0);
+    opacity: 1;
+}
+.teamcard2 .teaminfo{
+    height: calc(100% - 480px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.teamimg img{
+    height: 36px;
+}
+.teaminfo h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+.teaminfo button{
+    font-family: serif;
+    padding: 11px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.teaminfo button:hover{
+    background-color: black;
+    color: white;
+}
+.teamcard3{
+    height: 100%;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+.teamcard3 .teamimg{
+    background-image: url('https://assets-global.website-files.com/63c3f1995d4c3581bbc944b5/63c68f2e0a57ab81ad90f31f_team-02-p-500.webp');
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.timg1,
+.timg2,
+.timg3{
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.teamimg:hover .timg1,
+.teamimg:hover .timg2,
+.teamimg:hover .timg3{
+    transform: translateY(0);
+    opacity: 1;
+}
+.teamcard3 .teaminfo{
+    height: calc(100% - 480px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.teamimg img{
+    height: 36px;
+}
+.teaminfo h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+.teaminfo button{
+    font-family: serif;
+    padding: 11px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.teaminfo button:hover{
+    background-color: black;
+    color: white;
+}
+.teamcard4{
+    height: 100%;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+.teamcard4 .teamimg{
+    background-image: url('https://assets-global.website-files.com/63c3f1995d4c3581bbc944b5/63c68f2ed7fe4b9a5bef7ee1_team-03-p-500.webp');
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.timg1,
+.timg2,
+.timg3{
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.teamimg:hover .timg1,
+.teamimg:hover .timg2,
+.teamimg:hover .timg3{
+    transform: translateY(0);
+    opacity: 1;
+}
+.teamcard4 .teaminfo{
+    height: calc(100% - 480px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.teamimg img{
+    height: 36px;
+}
+.teaminfo h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+.teaminfo button{
+    font-family: serif;
+    padding: 11px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.teaminfo button:hover{
+    background-color: black;
+    color: white;
+}
+#section7{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.sec7logo{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 150px;
+}
+.sec7logo img{
+    height: 42px;
+}
+#section7 .sec7info{
+    width: 50%;
+}
+.sec7info h2{
+    font-size: 41px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.sec7info p{
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.sec7logo2{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 150px;
+}
+.sec7logo2 img{
+    height: 48px;
+}
+#section7 .sec7info2{
+    width: 50%;
+}
+.sec7info2 h2{
+    font-size: 41px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.sec7info2 p{
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+#section8{
+    height: 100%;
+    width: 100%;
+}
+.sec8contact{
+    height: 80%;
+    width: 100%;
+    background-color: #F1F6F5;
+    padding-top: 126px;
+    padding-left: 117px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 320px;
+}
+.scontact p{
+    font-size: 19px;
+}
+.sec8info h1{
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.sec8info p{
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 78px;
+}
+.sec8info button{
+    font-family: serif;
+    padding: 20px 33px;
+    border-radius: 40px;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.sec8info i{
+    font-size: 20px;
+}
+.s8new{
+    margin-top: 120px;
+}
+.s8new p{
+    font-size: 18px;
+}
+.s8new .sep{
+    margin-top: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.121);
+}
+.sec9header{
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec9header h1{
+    font-size: 58px;
+    font-weight: 500;
+}
+.sec9header button{
+    font-family: serif;
+    padding: 20px 30px;
+    border-radius: 40px;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.sec9header button:hover{
+    background-color: black;
+    color: white;
+}
+.sec9main{
+    display: flex;
+    justify-content: space-between;
+}
+.blogcard1{
+    width: 375px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.blogcard1 .blogimg{
+    overflow: hidden;
+}
+.blogcard1 .blogimg img{
+    width: 375px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.blogimg:hover img{
+    transform: scale(1.1);
+}
+
+.blogcard1 h1{
+    font-size: 26px;
+    font-weight: 500;
+}
+.blogcard1 p{
+    font-size: 20px;
+}
+.blogcard1 .pages{
+    margin-top: 20px;
+}
+.blogcard1 .bloglink{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bloglink p{
+    width: fit-content;
+    background-image: linear-gradient(black, black);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 1px;
+    transition: background-size 0.4s ease;
+    cursor: pointer;
+}
+.bloglink p:hover{
+    background-size: 100% 1px;
+}
+.blogcard1 .bloglogo{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.blogcard1 .bloglogo img{
+    height: 32px;
+}
+.blogsocials{
+    display: flex;
+    gap: 10px;
+}
+.blogsocials .insta{
+    background-color: rgb(207, 230, 238);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.blogsocials .insta i{
+    font-size: 20px;
+}
+.blogsocials .twit{
+    background-color: rgb(207, 230, 238);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.blogsocials .twit i{
+    font-size: 20px;
+}
+.blogsocials .behance{
+    background-color: rgb(207, 230, 238);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.blogsocials .behance i{
+    font-size: 20px;
+}
+.blogcard1 .sep{
+    margin-top: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.121);
+    width: 100%;
+}
+.blogcard1 button{
+    font-family: serif;
+    padding: 20px 30px;
+    border-radius: 40px;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.sec9footer{
+    margin-top: 100px;
+}
+.sec9footer .sep{
+    margin-top: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.121);
+    width: 100%;
+}
+.sec9footer .foot{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foot1 p{
+    font-size: 20px;
+    color: gray;
+}
+.foot1 span{
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+}
+.foot2 p{
+    font-size: 20px;
+    color: gray;
+}
+.sec9footer .foot2{
+    display: flex;
+    gap: 20px;
+}
